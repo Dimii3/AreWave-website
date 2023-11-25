@@ -73,6 +73,27 @@ a {
   z-index: -1;
 }
 
+.cookie-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 2px transparent;
+  max-width: 40rem;
+  border-radius: 1rem;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(173deg, rgb(0, 170, 171) 25%, rgb(0, 214, 160) 100%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  padding: 3rem 4rem;
+}
+.cookie-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cookie-modal .cookies-text {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
 .btn {
   position: relative;
   padding: 1.5rem 4rem;
@@ -316,7 +337,7 @@ a {
 }
 .about .about-body .about-left .strategy .strategy-item__top span {
   color: #231f20;
-  font-size: 6rem;
+  font-size: 5rem;
   margin-right: 1rem;
 }
 .about .about-body .about-left .strategy .strategy-item__top--second {
@@ -462,7 +483,8 @@ a {
 .prices .prices-box .price-card {
   padding: 4rem 2rem;
   border-radius: 1rem;
-  background: linear-gradient(173deg, rgb(242, 242, 242) 15%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(173deg, rgb(242, 242, 242) 15%, rgba(39, 204, 111, 0.25) 100%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -599,6 +621,10 @@ a {
 .contact-body .contact-content .social-box__item {
   font-size: 3rem;
   color: #00ab80;
+  transition: color 0.3s;
+}
+.contact-body .contact-content .social-box__item:hover {
+  color: #231f20;
 }
 .contact-body .contact-form {
   width: 50%;

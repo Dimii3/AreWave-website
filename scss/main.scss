@@ -77,6 +77,27 @@ a {
 	z-index: -1;
 }
 
+.cookie-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border: 2px transparent;
+	max-width: 40rem;
+	border-radius: 1rem;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(173deg, rgba(0, 170, 171, 1) 25%, rgba(0, 214, 160, 1) 100%);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+	padding: 3rem 4rem;
+	&::backdrop {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.cookies-text {
+		font-size: 2rem;
+		color: $pure-white;
+		margin-bottom: 3rem;
+	}
+}
+
 .btn {
 	position: relative;
 	padding: 1.5rem 4rem;
@@ -328,7 +349,7 @@ a {
 						color: $brand-color;
 						span {
 							color: $dark-color;
-							font-size: 6rem;
+							font-size: 5rem;
 							margin-right: 1rem;
 						}
 						&--second {
@@ -485,7 +506,8 @@ a {
 		.price-card {
 			padding: 4rem 2rem;
 			border-radius: 1rem;
-			background: linear-gradient(173deg, rgba(242, 242, 242, 1) 15%, rgba(255, 255, 255, 1) 100%);
+			background: linear-gradient(173deg, rgb(242, 242, 242) 15%, rgba(39, 204, 111, 0.25) 100%);
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 			text-align: center;
 			&__title {
@@ -625,6 +647,10 @@ a {
 			&__item {
 				font-size: 3rem;
 				color: $brand-color;
+				transition: color 0.3s;
+				&:hover {
+					color: $dark-color;
+				}
 			}
 		}
 	}
