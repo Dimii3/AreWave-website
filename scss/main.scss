@@ -40,7 +40,7 @@ a {
 }
 
 .wrapper {
-	max-width: 140rem;
+	max-width: 120rem;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -166,6 +166,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		max-width: 130rem;
 	}
 	&__logo {
 		font-size: 3rem;
@@ -302,6 +303,10 @@ a {
 	}
 }
 
+.header .wrapper {
+	max-width: 130rem;
+}
+
 // ABOUT
 .about {
 	position: relative;
@@ -336,7 +341,7 @@ a {
 					opacity: 0;
 					transform: translateX(-100%);
 					&:nth-child(even) {
-						background-color: $dark-color;
+						background: linear-gradient(173deg, rgba(0, 170, 171, 1) 25%, rgba(0, 214, 160, 1) 100%);
 						border-radius: 1rem;
 						padding: 2rem;
 					}
@@ -353,10 +358,10 @@ a {
 							margin-right: 1rem;
 						}
 						&--second {
-							color: $brand-color;
+							color: $dark-color;
 							span {
 								color: transparent;
-								-webkit-text-stroke: 1px $pure-white;
+								-webkit-text-stroke: 1px $dark-color;
 							}
 						}
 					}
@@ -372,16 +377,6 @@ a {
 		}
 		.strategy-item.show {
 			animation: appearingFromLeft 1s forwards;
-		}
-
-		.strategy-item:nth-child(2) {
-			animation-delay: 0.3s;
-		}
-		.strategy-item:nth-child(3) {
-			animation-delay: 0.6s;
-		}
-		.strategy-item:nth-child(4) {
-			animation-delay: 0.9s;
 		}
 
 		.about-right {
@@ -617,6 +612,10 @@ a {
 	.contact-content {
 		width: 50%;
 		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		&__heading {
 			background: linear-gradient(173deg, rgba(0, 170, 171, 1) 25%, rgba(0, 214, 160, 1) 100%);
 			background-clip: text;

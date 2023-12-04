@@ -35,7 +35,7 @@ a {
 }
 
 .wrapper {
-  max-width: 140rem;
+  max-width: 120rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -157,6 +157,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 130rem;
 }
 .nav__logo {
   font-size: 3rem;
@@ -285,6 +286,10 @@ a {
   transform: rotateX(5deg) rotateY(-5deg);
 }
 
+.header .wrapper {
+  max-width: 130rem;
+}
+
 .about {
   position: relative;
 }
@@ -323,7 +328,7 @@ a {
   transform: translateX(-100%);
 }
 .about .about-body .about-left .strategy .strategy-item:nth-child(even) {
-  background-color: #231f20;
+  background: linear-gradient(173deg, rgb(0, 170, 171) 25%, rgb(0, 214, 160) 100%);
   border-radius: 1rem;
   padding: 2rem;
 }
@@ -341,11 +346,11 @@ a {
   margin-right: 1rem;
 }
 .about .about-body .about-left .strategy .strategy-item__top--second {
-  color: #00ab80;
+  color: #231f20;
 }
 .about .about-body .about-left .strategy .strategy-item__top--second span {
   color: transparent;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px #231f20;
 }
 .about .about-body .about-left .strategy .strategy-item__bottom {
   font-size: 1.6rem;
@@ -356,15 +361,6 @@ a {
 }
 .about .about-body .strategy-item.show {
   animation: appearingFromLeft 1s forwards;
-}
-.about .about-body .strategy-item:nth-child(2) {
-  animation-delay: 0.3s;
-}
-.about .about-body .strategy-item:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.about .about-body .strategy-item:nth-child(4) {
-  animation-delay: 0.9s;
 }
 .about .about-body .about-right {
   width: 50%;
@@ -588,6 +584,10 @@ a {
 .contact-body .contact-content {
   width: 50%;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .contact-body .contact-content__heading {
   background: linear-gradient(173deg, rgb(0, 170, 171) 25%, rgb(0, 214, 160) 100%);
