@@ -14,12 +14,15 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="/css/main.css" />
-		<script src="https://kit.fontawesome.com/1ddfd708d9.js" crossorigin="anonymous"></script>
+		<script defer src="https://kit.fontawesome.com/1ddfd708d9.js" crossorigin="anonymous"></script>
 		<script defer src="/js/main.js"></script>
 	</head>
 	<body>
 		<dialog class="cookie-modal">
-			<p class="cookies-text">This site uses imaginary cookies. Don't be alarmed by this message. Press accept and Continue enjoying your life. Have a nice day</p>
+			<p class="cookies-text">
+				This site uses imaginary cookies. Don't be alarmed by this message. Press accept and Continue
+				enjoying your life. Have a nice day
+			</p>
 			<button class="btn cookie-btn">Accept</button>
 		</dialog>
 		<button class="menu-btn" aria-label="Button to handle menu">
@@ -33,8 +36,8 @@
 			<div class="wrapper">
 				<a href="#" class="nav__logo">Are<span>Wave</span></a>
 				<div class="nav-links">
-					<a href="#about" class="nav-links__link">About</a>
-					<a href="#portfolio" class="nav-links__link">Portfolio</a>
+					<a href="#about" class="nav-links__link">About us</a>
+					<a href="#portfolio" class="nav-links__link">Gallery</a>
 					<a href="#prices" class="nav-links__link">Prices</a>
 					<a href="#contact" class="nav-links__link">Contact</a>
 				</div>
@@ -54,6 +57,53 @@
 			</div>
 		</header>
 		<main>
+			<section class="section achievements">
+				<h2 class="section-heading">Our Achievements</h2>
+				<p class="section-description">Our Success Story in Numbers</p>
+				<div class="wrapper m-standard">
+					<div class="achievements-box">
+						<div class="achievement-card animate">
+							<div class="achievement-card__icon">
+								<img
+									src="/img/money-transfer-flatline-a330f.png"
+									alt="alts are important"
+									loading="lazy" />
+							</div>
+							<h3 class="achievement-card__title">Customer Excellence</h3>
+							<p class="achievement-card__description">
+								We take pride in delivering exceptional customer service. Our commitment to
+								excellence has earned us the trust and loyalty of a thriving community of
+								satisfied customers
+							</p>
+						</div>
+						<div class="achievement-card animate">
+							<div class="achievement-card__icon">
+								<img
+									src="/img/credit-card-flatline-68fe0.png"
+									alt="alts are important"
+									loading="lazy" />
+							</div>
+							<h3 class="achievement-card__title">Innovation Hub</h3>
+							<p class="achievement-card__description">
+								At the forefront of technology, we foster innovation. Our groundbreaking
+								solutions and cutting-edge services empower businesses to stay ahead in the
+								ever-evolving digital landscape
+							</p>
+						</div>
+						<div class="achievement-card animate">
+							<div class="achievement-card__icon">
+								<img src="/img/revenue-outline.png" alt="alts are important" loading="lazy" />
+							</div>
+							<h3 class="achievement-card__title">Global Impact</h3>
+							<p class="achievement-card__description">
+								Making a difference worldwide, our initiatives extend beyond borders. From
+								sustainable practices to community outreach, we are dedicated to creating a
+								positive impact on a global scale
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="section about" id="about">
 				<div class="decoration-box"></div>
 				<div class="decoration-box"></div>
@@ -89,7 +139,7 @@
 							</li>
 							<li class="strategy-item animate">
 								<p class="strategy-item__top strategy-item__top--second">
-									<span>04</span>Leaders 
+									<span>04</span>Leaders
 								</p>
 								<p class="strategy-item__bottom strategy-item__bottom--second">
 									Proven Track Record: Our legacy as leaders in the IT industry is built on
@@ -99,38 +149,12 @@
 						</ul>
 					</div>
 					<div class="about-right">
-						<div class="about-mini-card">
-							<img
-								src="/img/credit-card-flatline-68fe0.png"
-								alt="example alt, I remember about it"
-								class="about-mini-card__image"
-								loading="lazy" />
-							<h3 class="about-mini-card__title">Verifed payments</h3>
-						</div>
-						<div class="about-mini-card">
-							<img
-								src="/img/revenue-outline.png"
-								alt="example alt, I remember about it"
-								class="about-mini-card__image"
-								loading="lazy" />
-							<h3 class="about-mini-card__title">Increased savings</h3>
-						</div>
-						<div class="about-mini-card">
-							<img
-								src="/img/money-transfer-flatline-a330f.png"
-								alt=""
-								loading="lazy"
-								class="about-mini-card__image" />
-							<h3 class="about-mini-card__title">Ease of transaction</h3>
-						</div>
-						<div class="about-mini-card">
-							<img
-								src="/img/happy-face-outline.png"
-								alt="example alt, I remember about it"
-								class="about-mini-card__image"
-								loading="lazy" />
-							<h3 class="about-mini-card__title">Guaranteed Smile</h3>
-						</div>
+						<h3 class="about-right__heading">Optimize <span>Your</span> Website</h3>
+						<img
+							src="/img/3d-zielone-tlo-geometryczne-pelnokolorowa-ilustracja-obrazu.jpg"
+							alt="alts are important"
+							loading="lazy"
+							class="about-right__img" />
 					</div>
 				</div>
 			</section>
@@ -203,7 +227,7 @@
 					pricing
 				</p>
 				<div class="prices-box wrapper m-standard">
-					<div class="price-card">
+					<div class="price-card animate">
 						<h3 class="price-card__title">Standard</h3>
 						<p class="price-card__price"><span>100$</span> per month</p>
 						<ul class="price-list">
@@ -214,7 +238,7 @@
 						</ul>
 						<button class="btn">Choose</button>
 					</div>
-					<div class="price-card price-card--second">
+					<div class="price-card animate price-card--second">
 						<h3 class="price-card__title price-card__title--second">Premium</h3>
 						<p class="price-card__price price-card__price--second"><span>700$</span> per year</p>
 						<ul class="price-list">
@@ -225,7 +249,7 @@
 						</ul>
 						<button class="btn btn--best-price">Choose</button>
 					</div>
-					<div class="price-card">
+					<div class="price-card animate">
 						<h3 class="price-card__title">Ultra</h3>
 						<p class="price-card__price"><span>1 200$</span> per month</p>
 						<ul class="price-list">
@@ -257,10 +281,10 @@
 									<i class="fa-solid fa-square-phone"></i> +52 992 992 118
 								</li>
 								<li class="contact-ways__item">
-									<i class="fa-solid fa-square-envelope"></i> AreWave.office@mail.com
+									<i class="fa-solid fa-square-envelope"></i>AreWave.office@mail.com
 								</li>
 								<li class="contact-ways__item">
-									<i class="fa-solid fa-map-location-dot"></i> St. Volley Brawl, 33 - 1905,
+									<i class="fa-solid fa-map-location-dot"></i>St. Volley Brawl, 33 - 1905,
 									New York
 								</li>
 							</ul>
@@ -268,7 +292,9 @@
 								<a href="#" class="social-box__item" aria-label="Link to social profile"
 									><i class="fa-brands fa-square-instagram"></i
 								></a>
-								<a href="#" class="social-box__item" aria-label="Link to social profile"><i class="fa-brands fa-linkedin"></i></a>
+								<a href="#" class="social-box__item" aria-label="Link to social profile"
+									><i class="fa-brands fa-linkedin"></i
+								></a>
 								<a href="#" class="social-box__item" aria-label="Link to social profile"
 									><i class="fa-brands fa-square-facebook"></i
 								></a>
@@ -277,18 +303,16 @@
 						<div class="contact-form">
 							<form class="form">
 								<div class="form-box">
-									<label for="firstname">Enter your firstname</label>
-									<input type="text" id="firstname" placeholder="Johnson" />
+									<label for="firstname">Enter your name</label>
+									<input type="text" id="firstname" />
 								</div>
 								<div class="form-box">
-									<label for="email">Enter your address email</label>
-									<input type="email" id="email" placeholder="MikeJohnson@amixo.com" />
+									<label for="email">Enter your email</label>
+									<input type="email" id="email" />
 								</div>
 								<div class="form-box">
 									<label for="message">Message</label>
-									<textarea
-										id="message"
-										placeholder="We understand your needs and are glad you are here"></textarea>
+									<textarea id="message"></textarea>
 								</div>
 								<button class="btn form-btn">Submit</button>
 							</form>
@@ -297,7 +321,8 @@
 					<div class="contact-bottom">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193593.7477402037!2d-74.14311437809454!3d40.69815181937901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNowy%20Jork%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1700857541915!5m2!1spl!2spl"
-							loading="lazy" title="Google Map"
+							loading="lazy"
+							title="Google Map"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
